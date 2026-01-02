@@ -2,22 +2,22 @@
 
 Each block in the blockchain is an object of the Block class and contains the following components:
 
-index  
+index:  
 This shows the position of the block in the blockchain.
 
-timestamp  
+timestamp:  
 This records the exact time the block was created.
 
-data  
+data:  
 This holds the payload of the block, such as transaction data or messages.
 
-previous_hash  
+previous_hash:  
 This keeps the hash of the previous block, creating a cryptographic link between blocks.
 
-nonce  
+nonce:  
 This is a number that increases during mining to meet the Proof-of-Work condition.
 
-hash  
+hash:  
 This is the SHA-256 hash of the block's contents, calculated using all the above fields.
 
 The hash is computed as:SHA256(index + timestamp + data + previous_hash + nonce)
@@ -48,13 +48,13 @@ If either condition fails, the blockchain is declared invalid.Therefore it effec
 
 This blockchain uses a simplified Proof-of-Work method.
 
-Mining Process
+Mining Process:
 
 A difficulty level is set (e.g., difficulty = 2).
 
 A valid block hash must start with a specific number of leading zeros:("0"*difficulty)
 
-How Mining Works
+How Mining Works:
 
 A new block is created with an initial nonce value.
 
